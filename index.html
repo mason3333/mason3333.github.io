@@ -294,7 +294,7 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h1 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h1><hr>
-<h2 id="安装配置环境"><a href="#安装配置环境" class="headerlink" title="##安装配置环境"></a>##安装配置环境</h2><ul>
+<h2 id="安装配置环境"><a href="#安装配置环境" class="headerlink" title="安装配置环境"></a>安装配置环境</h2><ul>
 <li><p>下载安装 nodeJs</p>
 </li>
 <li><p>下载链接: <a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p>
@@ -311,82 +311,71 @@
 <li>或者 <code>node -v</code></li>
 </ul>
 </li>
-<li><p>安装cnpm淘宝镜像加快速度：</p>
-<pre><code>npm install -g cnpm registry=http://registry.npm.taobao.org</code></pre></li>
-<li><p>确定是否cnpm下载成功</p>
-<pre><code>npm -v</code></pre></li>
-<li><p>下载hexo框架</p>
-<pre><code>cnpm install -g hexo-cli</code></pre></li>
-<li><p>确定是否下载成功</p>
-<pre><code>hexo -v</code></pre></li>
+<li><p>安装cnpm淘宝镜像加快速度：<br><code>npm install -g cnpm registry=http://registry.npm.taobao.org</code></p>
+</li>
+<li><p>确定是否cnpm下载成功<br><code>npm -v</code></p>
+</li>
+<li><p>下载hexo框架<br><code>cnpm install -g hexo-cli</code></p>
+</li>
+<li><p>确定是否下载成功<br><code>hexo -v</code></p>
+</li>
 <li><p><strong>补充</strong>：一切配置都要在<code>root</code>下进行操作</p>
 </li>
 </ul>
-<h2 id="创建一个blog文件目录"><a href="#创建一个blog文件目录" class="headerlink" title="##创建一个blog文件目录"></a>##创建一个blog文件目录</h2><ul>
+<h2 id="创建一个blog文件目录"><a href="#创建一个blog文件目录" class="headerlink" title="创建一个blog文件目录"></a>创建一个blog文件目录</h2><ul>
 <li>默认操作都在blog目录下进行</li>
 <li>初始化hexo:<code>hexo init</code></li>
 </ul>
-<h2 id="启动博客"><a href="#启动博客" class="headerlink" title="##启动博客"></a>##启动博客</h2><ul>
+<h2 id="启动博客"><a href="#启动博客" class="headerlink" title="启动博客"></a>启动博客</h2><ul>
 <li>terminal下输入：<code>hexo s</code></li>
 <li>启动网页: &ensp;<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></li>
 </ul>
-<h2 id="书写博客"><a href="#书写博客" class="headerlink" title="##书写博客"></a>##书写博客</h2><ul>
-<li><strong>默认语法为</strong>:<code>markdown</code><ul>
+<h2 id="书写博客"><a href="#书写博客" class="headerlink" title="书写博客"></a>书写博客</h2><ul>
+<li><p><strong>默认语法为</strong>:<code>markdown</code></p>
+<ul>
 <li>请参考：<a href="http://baidu.com" target="_blank" rel="noopener">http://baidu.com</a><h4 id="terminal下书写的方法："><a href="#terminal下书写的方法：" class="headerlink" title="terminal下书写的方法："></a>terminal下书写的方法：</h4></li>
 </ul>
 </li>
-<li>新建一个blog: <code>hexo n &quot;name&quot;</code></li>
-<li>切换到blog文件目录下： <code>vim name.md</code><h4 id="vscode下的书写方法："><a href="#vscode下的书写方法：" class="headerlink" title="vscode下的书写方法："></a>vscode下的书写方法：</h4>#####安装markdown插件</li>
-<li>安装 (可同步实现书写效果！！！)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">    MarkDown Preview Enhanced</span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
-  md-filter<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#####正式书写.md文件</span><br><span class="line">+ 在 &#96;blog\source\_posts&#96;目录下新建 &#96;.md&#96;格式文件</span><br><span class="line">+ 在 vscode 下打开</span><br><span class="line">打开&#96;MarkDown Preview Enhanced&#96;进行同步书写</span><br><span class="line"></span><br><span class="line">#####更新 blog 相关文件</span><br><span class="line">+ 在 blog 路径下进行</span><br></pre></td></tr></table></figure>
-  hexo clean<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;</span><br><span class="line">    hexo g</span><br></pre></td></tr></table></figure></li>
-<li>重新启动 <code>hexo s</code><br>##将hexo部署到github</li>
-</ul>
-<hr>
-<ul>
-<li><p>创建一个 github 账户</p>
+<li><p>新建一个blog: <code>hexo n &quot;name&quot;</code></p>
 </li>
-<li><p>新建一个仓库名称为你的昵称</p>
-<ul>
+<li><p>切换到blog文件目录下： <code>vim name.md</code></p>
+<h4 id="vscode下的书写方法："><a href="#vscode下的书写方法：" class="headerlink" title="vscode下的书写方法："></a>vscode下的书写方法：</h4><h5 id="安装markdown插件"><a href="#安装markdown插件" class="headerlink" title="安装markdown插件"></a>安装markdown插件</h5></li>
+<li><p>安装 (可同步实现书写效果！！！)<br><code>MarkDown Preview Enhanced</code><br><code>md-filter</code></p>
+<h5 id="正式书写-md文件"><a href="#正式书写-md文件" class="headerlink" title="正式书写.md文件"></a>正式书写.md文件</h5></li>
+<li><p>在 <code>blog\source\_posts</code>目录下新建 <code>.md</code>格式文件</p>
+</li>
+<li><p>在 vscode 下打开<br>打开<code>MarkDown Preview Enhanced</code>进行同步书写</p>
+</li>
+</ul>
+<h5 id="更新-blog-相关文件"><a href="#更新-blog-相关文件" class="headerlink" title="更新 blog 相关文件"></a>更新 blog 相关文件</h5><ul>
+<li>在 blog 路径下进行<br><code>hexo clean</code><br><code>hexo g</code></li>
+<li>重新启动 <code>hexo s</code></li>
+</ul>
+<h2 id="将hexo部署到github"><a href="#将hexo部署到github" class="headerlink" title="将hexo部署到github"></a>将hexo部署到github</h2><ul>
+<li>创建一个 github 账户</li>
+<li>新建一个仓库名称为你的昵称<ul>
 <li>例如：<code>mason3333.github.io</code></li>
 </ul>
 </li>
-<li><p>安装git插件</p>
-<pre><code>cnpm install --save hexo-deployer-git</code></pre><p>####配置 <strong>_config.yml</strong> 文件</p>
-</li>
-<li><p>在deploment下加入</p>
-<pre><code>type: git
-repo: http://github.com/mason3333/mason3333.github.io.git (你的仓库地址)
-branch: master</code></pre><p>######补充：+ type、repo、branch前面要空格！！！</p>
-</li>
+<li>安装git插件<br><code>cnpm install --save hexo-deployer-git</code><h4 id="配置-config-yml-文件"><a href="#配置-config-yml-文件" class="headerlink" title="配置 _config.yml 文件"></a>配置 <strong>_config.yml</strong> 文件</h4></li>
+<li>在deploment下加入<br><code>type: git</code><br><code>repo: http://github.com/mason3333/mason3333.  github.io.git (你的仓库地址)</code><br><code>branch: master</code></li>
 </ul>
-<p>####配置git的文件</p>
-<ul>
-<li><p>在 git bash 下输入</p>
-<pre><code>git config user.name&quot;username&quot;
-
-git config user.email &quot;email&quot;</code></pre></li>
-<li><p>最后在终端下输入</p>
-<pre><code>hexo d</code></pre></li>
+<h6 id="补充：-type、repo、branch前面要空格！！！"><a href="#补充：-type、repo、branch前面要空格！！！" class="headerlink" title="补充：+ type、repo、branch前面要空格！！！"></a>补充：+ type、repo、branch前面要空格！！！</h6><h4 id="配置git的文件"><a href="#配置git的文件" class="headerlink" title="配置git的文件"></a>配置git的文件</h4><ul>
+<li>在 git bash 下输入<br><code>git config user.name&quot;username&quot;
+git config user.email &quot;email&quot;</code></li>
+<li>最后在终端下输入<br><code>hexo d</code></li>
 </ul>
-<h2 id="登录你的个人博客"><a href="#登录你的个人博客" class="headerlink" title="###登录你的个人博客"></a>###登录你的个人博客</h2><ul>
+<h3 id="登录你的个人博客"><a href="#登录你的个人博客" class="headerlink" title="登录你的个人博客"></a>登录你的个人博客</h3><ul>
 <li>仓库地址的后缀名：<br>  <a href="https://mason3333.github.io/" target="_blank" rel="noopener">https://mason3333.github.io/</a></li>
 </ul>
-<h2 id="博客换肤"><a href="#博客换肤" class="headerlink" title="###博客换肤"></a>###博客换肤</h2><ul>
-<li><p>通过 github 下找到相关项目地址</p>
-<ul>
+<h3 id="博客换肤"><a href="#博客换肤" class="headerlink" title="博客换肤"></a>博客换肤</h3><ul>
+<li>通过 github 下找到相关项目地址<ul>
 <li>例如：<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a></li>
 </ul>
 </li>
-<li><p>在blog目录下输入：</p>
-<pre><code>git clone https://github.com/litten/hexo-theme-yilia themes/yilia(自定义主题名)</code></pre></li>
-<li><p>在 <strong>_config.yml</strong>目录下修改<code>themes</code>为你下载的主题名字<br>#####更新 blog 相关文件</p>
-</li>
-<li><p>在 blog 路径下进行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">    hexo clean</span><br><span class="line">&#96;&#96;&#96;</span><br></pre></td></tr></table></figure>
-<p>  hexo g</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;</span><br><span class="line">    hexo d (推到远端github)</span><br></pre></td></tr></table></figure>
-</li>
+<li>在blog目录下输入：<br><code>git clone https://github.com/litten/hexo-theme-yilia themes/yilia(自定义主题名)</code></li>
+<li>在 <strong>_config.yml</strong>目录下修改<code>themes</code>为你下载的主题名字<h5 id="更新-blog-相关文件-1"><a href="#更新-blog-相关文件-1" class="headerlink" title="更新 blog 相关文件"></a>更新 blog 相关文件</h5></li>
+<li>在 blog 路径下进行<br><code>hexo clean</code><br><code>hexo g</code><br><code>hexo d (推到远端github)</code></li>
 </ul>
 
     
